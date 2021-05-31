@@ -1,0 +1,13 @@
+load("//:def.bzl", "deno_binary")
+
+sh_test(
+    name = "hello_test",
+    srcs = ["hello_test.sh"],
+    args = ["$(location :hello)"],
+    data = [":hello"],
+)
+
+deno_binary(
+    name = "hello",
+    src = "hello-world.js",
+)
