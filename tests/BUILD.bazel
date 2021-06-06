@@ -1,13 +1,7 @@
-load("//:def.bzl", "deno_binary")
+load(":test.bzl", "equals")
 
-sh_test(
+equals(
     name = "hello_test",
-    srcs = ["hello_test.sh"],
-    args = ["$(location :hello)"],
-    data = [":hello"],
-)
-
-deno_binary(
-    name = "hello",
-    src = "hello-world.js",
+    target = "//tests/hello-world:hello", 
+    expectation = "Hello, world!"
 )

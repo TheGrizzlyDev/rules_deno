@@ -4,14 +4,14 @@ set -euo pipefail
 
 program="$1"
 got=$("$program")
-want="Hello, world!"
+want="$2"
 
 if [ "$got" != "$want" ]; then
   cat >&2 <<EOF
 got:
 $got
 
-want:
+expected:
 $want
 EOF
   exit 1
