@@ -5,3 +5,10 @@ equals(
     target = "//tests/hello-world:hello", 
     expectation = "Hello, world!"
 )
+
+
+equals(
+    name = "local_imports_test",
+    target = "//tests/local-import:hello_with_deps",
+    expectation = "Hello, world!"
+)

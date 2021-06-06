@@ -3,7 +3,7 @@ load("//:def.bzl", "deno_binary")
 
 deno_binary(
     name = "hello",
-    src = "hello-world.js",
+    main = "hello-world.js",
     visibility = [
         "//tests:__pkg__"
     ]
