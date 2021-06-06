@@ -1,4 +1,7 @@
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+load("//internal:repo.bzl", _deno_download = "deno_download")
+
+deno_download = _deno_download
 
 def deno_rules_dependencies():
     """Declares external repositories that rules_go_simple depends on. This

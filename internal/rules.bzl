@@ -1,4 +1,5 @@
-load("@bazel_skylib//:lib.bzl", "shell")
+load(":actions.bzl", "deno_compile")
+
 
 def _deno_library_impl(ctx):
     return [
@@ -21,23 +22,14 @@ deno_library = rule(
 
 def _deno_binary_impl(ctx):
     out = ctx.actions.declare_file(ctx.label.name + "%/deno_binary")
-    src = ctx.file.main
-    srcs = [src]
+    main = ctx.file.main
+    srcs = [main]
     deps = [dep[DefaultInfo] for dep in ctx.attr.deps]
     for dep in deps:
         srcs += dep.files.to_list()
 
-    deno_cmd = "deno compile --output {out} {src}".format(
-        out = shell.quote(out.path),
-        src = shell.quote(src.path),
-    )
-    ctx.actions.run_shell(
-        outputs                 = [out],
-        inputs                  = srcs,
-        command                 = deno_cmd,
-        mnemonic                = "DenoCompile",
-        use_default_shell_env   = True
-    )
+    deno_compile(ctx, main, srcs, out)
+    
     return [DefaultInfo(
         files = depset([out]),
         executable = out,
@@ -59,4 +51,5 @@ deno_binary = rule(
     },
     doc = "Builds a deno bundle executable from js/ts source code",
     executable = True,
+    toolchains = ["@rules_deno//:toolchain_type"],
 )
