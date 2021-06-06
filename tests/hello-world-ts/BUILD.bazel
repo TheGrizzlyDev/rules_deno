@@ -1,0 +1,10 @@
+load("//:def.bzl", "deno_binary")
+
+
+deno_binary(
+    name = "hello",
+    main = "hello-world.ts",
+    visibility = [
+        "//tests:__pkg__"
+    ]
+)

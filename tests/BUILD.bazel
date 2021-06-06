@@ -6,9 +6,14 @@ equals(
     expectation = "Hello, world!"
 )
 
-
 equals(
     name = "local_imports_test",
     target = "//tests/local-import:hello_with_deps",
+    expectation = "Hello, world!"
+)
+
+equals(
+    name = "hello_typescript_test",
+    target = "//tests/hello-world-ts:hello", 
     expectation = "Hello, world!"
 )
