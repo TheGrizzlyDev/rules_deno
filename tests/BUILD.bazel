@@ -23,3 +23,9 @@ equals(
     target = "//tests/import-map:import_map", 
     expectation = "Hello, world!"
 )
+
+equals(
+    name = "permissions_test",
+    target = "//tests/permissions:permissions",
+    expectation = "Hello, world!"
+)

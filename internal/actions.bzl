@@ -10,7 +10,7 @@ def deno_run(ctx, arguments, outputs, inputs, mnemonic):
     )
 
 
-def deno_compile(ctx, main, srcs, out, importmap):
+def deno_compile(ctx, main, srcs, out, importmap, permissions = []):
     full_srcs = srcs
 
     args = ctx.actions.args()
@@ -20,6 +20,9 @@ def deno_compile(ctx, main, srcs, out, importmap):
     if importmap:
         args.add("--import-map={}".format(importmap.path))
         full_srcs.append(importmap)
+
+    for permission in permissions:
+        args.add(permission)
 
     args.add(main.path)
 
