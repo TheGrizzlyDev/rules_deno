@@ -10,16 +10,23 @@ def deno_run(ctx, arguments, outputs, inputs, mnemonic):
     )
 
 
-def deno_compile(ctx, main, srcs, out):
+def deno_compile(ctx, main, srcs, out, importmap):
+    full_srcs = srcs
+
     args = ctx.actions.args()
     args.add("compile")
     args.add("--output", out.path)
+    
+    if importmap:
+        args.add("--import-map={}".format(importmap.path))
+        full_srcs.append(importmap)
+
     args.add(main.path)
 
     deno_run(
         ctx                     = ctx,
         outputs                 = [out],
-        inputs                  = srcs,
+        inputs                  = full_srcs,
         arguments               = [args],
         mnemonic                = "DenoCompile",
     )

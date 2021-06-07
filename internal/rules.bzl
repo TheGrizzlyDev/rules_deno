@@ -52,9 +52,10 @@ def _deno_binary_impl(ctx):
     out = ctx.actions.declare_file(ctx.label.name + "%/deno_binary")
     app = ctx.attr.app
     main = app[DenoAppProviderInfo].main
+    importmap = app[DenoAppProviderInfo].importmap
     srcs = [main] + ctx.attr.app[DefaultInfo].files.to_list()
     
-    deno_compile(ctx, main, srcs, out)
+    deno_compile(ctx, main, srcs, out, importmap = importmap)
     
     return [DefaultInfo(
         files = depset([out]),
