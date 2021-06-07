@@ -1,5 +1,5 @@
 load(":actions.bzl", "deno_compile")
-
+load(":providers.bzl", "DenoAppProviderInfo")
 
 def _deno_library_impl(ctx):
     return [
@@ -20,14 +20,40 @@ deno_library = rule(
     }
 )
 
+def _deno_app_impl(ctx):
+    return [
+        DefaultInfo(files = depset(transitive = [dep[DefaultInfo].files for dep in ctx.attr.deps])),
+        DenoAppProviderInfo(
+            main = ctx.file.main,
+            permissions = ctx.attr.permissions,
+            importmap = ctx.file.importmap
+        )
+    ]
+
+
+deno_app = rule(
+    _deno_app_impl,
+    attrs = {
+        "main": attr.label(
+            allow_single_file = [".js", ".ts"],
+            doc = "Source files to compile for the main package of this binary",
+            mandatory = True
+        ),
+        "deps": attr.label_list(
+            providers = [DefaultInfo],
+            doc = "Direct dependencies"
+        ),
+        "permissions": attr.string_list(),
+        "importmap": attr.label(allow_single_file = True)
+    }
+)
+
 def _deno_binary_impl(ctx):
     out = ctx.actions.declare_file(ctx.label.name + "%/deno_binary")
-    main = ctx.file.main
-    srcs = [main]
-    deps = [dep[DefaultInfo] for dep in ctx.attr.deps]
-    for dep in deps:
-        srcs += dep.files.to_list()
-
+    app = ctx.attr.app
+    main = app[DenoAppProviderInfo].main
+    srcs = [main] + ctx.attr.app[DefaultInfo].files.to_list()
+    
     deno_compile(ctx, main, srcs, out)
     
     return [DefaultInfo(
@@ -39,15 +65,7 @@ def _deno_binary_impl(ctx):
 deno_binary = rule(
     _deno_binary_impl,
     attrs = {
-        "main": attr.label(
-            allow_single_file = [".js", ".ts"],
-            doc = "Source files to compile for the main package of this binary",
-            mandatory = True
-        ),
-        "deps": attr.label_list(
-            providers = [DefaultInfo],
-            doc = "Direct dependencies"
-        )
+        "app": attr.label(providers = [DenoAppProviderInfo, DefaultInfo])
     },
     doc = "Builds a deno bundle executable from js/ts source code",
     executable = True,

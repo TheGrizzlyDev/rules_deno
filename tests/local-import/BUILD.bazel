@@ -1,4 +1,4 @@
-load("//:def.bzl", "deno_binary", "deno_library")
+load("//:def.bzl", "deno_binary", "deno_library", "deno_app")
 
 deno_library(
     name = "hello_with_deps_lib",
@@ -7,12 +7,17 @@ deno_library(
     ]
 )
 
-deno_binary(
-    name = "hello_with_deps",
+deno_app(
+    name = "hello_with_deps_app",
     main = "index.js",
     deps = [
         "hello_with_deps_lib"
     ],
+)
+
+deno_binary(
+    name = "hello_with_deps",
+    app  = ":hello_with_deps_app",
     visibility = [
         "//tests:__pkg__"
     ]
