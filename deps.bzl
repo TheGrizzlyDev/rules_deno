@@ -1,4 +1,4 @@
-load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 load("//internal:repo.bzl", _deno_download = "deno_download")
 
 deno_download = _deno_download
@@ -9,11 +9,15 @@ def deno_rules_dependencies():
 
     # bazel_skylib is a set of libraries that are useful for writing
     # Bazel rules. We use it to handle quoting arguments in shell commands.
+
     _maybe(
-        git_repository,
+        http_archive,
         name = "bazel_skylib",
-        remote = "https://github.com/bazelbuild/bazel-skylib",
-        commit = "3fea8cb680f4a53a129f7ebace1a5a4d1e035914",
+        urls = [
+            "https://github.com/bazelbuild/bazel-skylib/releases/download/1.0.3/bazel-skylib-1.0.3.tar.gz",
+            "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/releases/download/1.0.3/bazel-skylib-1.0.3.tar.gz",
+        ],
+        sha256 = "1c531376ac7e5a180e0237938a2536de0c54d93f5c278634818e0efc952dd56c",
     )
 
 def _maybe(rule, name, **kwargs):
