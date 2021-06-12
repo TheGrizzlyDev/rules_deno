@@ -24,7 +24,7 @@ Now you should be able to build a deno app. Currently the only rule that outputs
 You can declare a build in your BUILD file like this one:
 
 ```python
-load("//:def.bzl", "deno_binary", "deno_library", "deno_app")
+load("@rules_deno//:def.bzl", "deno_binary", "deno_library", "deno_app")
 
 # A set of sources that constitutes your deno app
 deno_library(

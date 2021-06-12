@@ -1,0 +1,795 @@
+{
+  "releases": {
+    "v1.11.0": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.11.0/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520586792,
+          "sha256": "f872606d5bbabb6e859312132f93d3b8b8e8aaedb55b11286f39f4c8b77a1ecd"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.11.0/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "f1f5870af3414bde6b2d6973bb96be40a50a4de60024ef4e5883074b0aa4fc57"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.11.0/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "dcee5d89abdf35385c2a7f723e38daf22ce7711af7f5a38d1075bb677c6484f7"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.11.0/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623521034479,
+          "sha256": "b59eb247780c6f1aaf43bfa963fed5ee0c3ac2412341d673ee55ca4ac3825324"
+        }
+      }
+    },
+    "v1.10.3": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.3/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "aa74e25b90207943af280a38948a944121f1df299072b63245337448b6d13c15"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.3/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "22aafee051291725ac9c02301eaa861f5c3375d0bdc41b2475d6745d94eb7907"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.3/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "0836022ddc35fe931884e182fa72614d927d851629f590c19d58a39f31d6cda7"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.3/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "7b278d41356ad0b36e79f9f444bd3e6b8e308fd08cb4ea381e085390825db22d"
+        }
+      }
+    },
+    "v1.10.2": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.2/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "914f3496e2e48972d94b0a36ee644c0652e91c080d354a309bec3c32bede9c56"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.2/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "ae8dde90c83de9b12ca110db324cf29f87b471ddfc06be1df9c18dcbd8a1413c"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.2/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "03bd14a0e506929769367b0bb604404dc37afad881db8f39d1b24df031856f2a"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.2/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "ec6f1e50df9dc32f493d53b3d5befe5d42e7eeba87ae9be75c331f900c3f2453"
+        }
+      }
+    },
+    "v1.10.1": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.1/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "0565f38f868bff93b7ef0da7b6e8b20048f2b5f0f1c8d6649cc922f7fbfafdc4"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.1/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "214e998a5eb69710440cc9671270869ae89019172a90127c91e146a50c23bb88"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.1/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "312559f818915a60584863420e4f7f74779fcbbdebae31868335dfa09e094dc0"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.10.1/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "cd82598abdefade06c9df0fc5644313213f118eceb9e42f984ec59323d8aec51"
+        }
+      }
+    },
+    "v1.9.2": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.2/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "05351b32f74642dcd8ab431252f6240e7c30d5aa6640406096260c926c055778"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.2/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "6facc63a33c575a016ec51c911ea0c1f09d51021d42b57d610a2185f26974bae"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.2/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "2725784bbccbef854b18ff25d4cf5ef6e0e85be783973edabad62d785fa009e3"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.2/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "05c69483ff0b98c7b26666e35672b71f3dcde1df523db10ccee60510275be1c5"
+        }
+      }
+    },
+    "v1.9.1": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.1/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "8d561300d01d4fe2f25994c0aa0cd75facbd5204e6a4c7b45a665cd55ab24be5"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.1/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "6e48d6ba946640e2679c3cc8167e87d40f4540a41de19b4699ed08b04f5e744d"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.1/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "8d251083804f716a6d9730999cc7a98c202945434abf9efa57e66372e5095552"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.1/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "fc1cb3719e276654990cb7b09795b1c93cc9c058d68579e0bff7bd79c019d633"
+        }
+      }
+    },
+    "v1.9.0": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.0/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "dfcca47a402c22829aa7d5113cca66158d7c0c90afc9c005deaad9d5071cea4d"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.0/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "f7b2414375d51ef447a34f32bd8aace174be42f879392fc22279ef9620b55bfc"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.0/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "f5841648e889ec55fb7a06b1a9e17aa19d5c65524a7e94db32e1b4050a7de865"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.9.0/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "94341d2eb5a319986bb35e7959d35dbe47c55904fb56f4245e528e9b9e2a7a44"
+        }
+      }
+    },
+    "v1.8.3": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.3/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "ff761bc736cde4d65c6703b4c1f116a4b63c0e3a276df11f1d15358a734aa160"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.3/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "3d331231ec3bb935d0415079859e4326b1d6f74ea611c5c1d6e8e9da9f197cfc"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.3/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "fce64fbedc922429c26c9d2302f5b1e2b0abe95567a8766b8e759c7bd15dfa4d"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.3/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "8d85a7986491206df7966048ae01976bc07f8dc42db6ec93afba7806c45b00c1"
+        }
+      }
+    },
+    "v1.8.2": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.2/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "fd564d242a4b4de81b449fe341598f3394de18bd25d793b74c44012eb7b0358a"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.2/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "35f8a13736c5a52144c720866c450d2fc0910f6a456d188fd7ff37e8147ccaba"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.2/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "d7a75b48b83b802ae2a01f33558b02ab00f6cb7b54169e956e11e6e1a7c38f96"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.2/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "c31e0d15c7c03e1ab896cce7cf5e62057fbc24114bc3509703d8af920f2226c6"
+        }
+      }
+    },
+    "v1.8.1": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.1/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "be854612103c8e22976ca5b3e54abd3628b8dba7eaf2f002a37c8163b413c62e"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.1/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "1c9369041a1cdf37ef6edf03abe5ff641db1324bf5d8a6742bfdbc0ce074fae9"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.1/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "05dc044072b980e1f7839aff51c2d895237d26c59dc89db16dba7a3f4c1019f5"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.1/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "bc6a16edfa2c4c3e972c9a419e82d0126c1cd437a3e97d9ae157aaab0ed0d840"
+        }
+      }
+    },
+    "v1.8.0": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.0/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "d5aa6f94fc0bf28e8be6568343b3b2b76bbd8cbb70f39690438fd2045c429dcc"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.0/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "78ff386309e39e4d2f4c5360d51f70887aa257ffd83c62652cd08e2df614d89d"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.0/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "b6cfa0f8f3bdd2f34d7814626c80a63f1f9434068d96827dfa9bcf58bcd04c5d"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.8.0/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "2a1de4d82f56a220f182834a9c44917437d0311b9023e28b70bd0ca515fd87a4"
+        }
+      }
+    },
+    "v1.7.5": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.5/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "6e667219be721c9d25ffa840395b0831c4f29ae2c4afefc91a103ffd68c24efd"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.5/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "85a4bf912bbeb922fe8d336eb3657f85a590ddc14f598eb2cc7385b4f0b7469d"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.5/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "b0a543118b6db06c96639eecced0224740ba020647fdbcd0898daa27045f8c08"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.5/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "4e2eece7efb110359205b8a0ce5f7ca672cbba8a6a717510866925c2238d8f49"
+        }
+      }
+    },
+    "v1.7.4": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.4/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "e48b5dc35addc01474fe803248eabba17be4fe72372f4c4fba440c3e27ece890"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.4/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "768b2cdff4140b0f4309bd6abb786b855e0f053013f296924ad617136a97fe1c"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.4/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "87f7104e43065ff8aa4e972f9f79944246edc43a5eddb2a41c325c04c699e912"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.4/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "bfb078cd785891093d174a74190027ac0f51ab09bad3ee208f7d713c8b73c0b3"
+        }
+      }
+    },
+    "v1.7.2": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.2/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "abb6e4f1b8258c28647bdfd4e7921fcce1ea8301d94af13322693f9dc57a806d"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.2/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "41bd15dc5df8c2fa446424851d46b6430a4730b9c47d6b092dc0ae4c73b8485c"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.2/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "7bee0cf33abb6f7caac3087e0badb9997c14d59ec75d71d1e9e6ad0d10aa0e41"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.2/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "df8cc225db877964b1931973af9607fdf3c63aeddb8ae945c919f5b01a09d53e"
+        }
+      }
+    },
+    "v1.7.1": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.1/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "f561ea2eeb629ef23a88b8149b1fe8f8736b2cba2a5e5f4d9a801bbcfc91ef28"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.1/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "c2d11e51ace6f81a0ae78ab96177456ac6aabd0ff51cca3578671a82e0ad2a27"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.1/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "40ee39fd0e39b1d6cbbaf6859f38ec1151345accf63c37be9dec7bc989ccf654"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.1/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "0d86f7ba1bd3dd848a4c164ec943ea26f2585d27b7331b6f708ed06e5ff745a7"
+        }
+      }
+    },
+    "v1.7.0": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.0/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "bf13deb654555edcf5af9bea8bf1bec9767a457c373c6b2aab7bbb252e14cbf3"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.0/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "f69757db6323e682fa974ecc435cb9f1452f5308ad783751f3a50b6fa392e5fc"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.0/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "c6c4e8515b3b81634ff55988eb40d707bf694ee283a7578fd262b5e720b013a3"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.7.0/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "7a5f8fbe2131e6ddcc294ed1abbb19c9fe7ab9449762573236f3d900885635cf"
+        }
+      }
+    },
+    "v1.6.3": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.3/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "e8567c020addf8568c264d1cdbba326ea0ce10f4eb193a60942587ac71e1751a"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.3/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "4921d973759d739581ac26421d1f8ffcfc526f06e95a6cb17c5291f3a9b076ba"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.3/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "8d65484d62e0e6bf747111950b245646e17be259cd52bf03acc78e14b0dfed57"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.3/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "3c5b6c63d4b7f455ab039e176c9b834686eee364600c6707ae0e2978a87439f6"
+        }
+      }
+    },
+    "v1.6.2": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.2/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "2cfcb2abe5fb91072e395cd611dd5fbf4041b0fba02dc55d0dd52a787ba14040"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.2/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "e7eace1b88013fa53d91fecf3fdd753a05df72fc9002d39e2dfd2ad8505a7af1"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.2/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "0f60fd0a377aae08411cf6b8433e246e0ac9697deecd6d1ed4866d3d0f2bd697"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.2/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "03c439ac146991a1ac48a4327ec4c332bef449a07e21e8e4d498e6eabf44cd7f"
+        }
+      }
+    },
+    "v1.6.1": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.1/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "4525fd0e87e5e860dda160c05e0bdc7607809680ca61414750b1c4531cf36102"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.1/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "e904baf3b64075c73150b0d3cb4f162a0d118acceddaf4850f3cea0934061760"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.1/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "ee90b70afb6aec7d80d6a1f80b751d778b3a47b91b644e4f79697c2fec47a53d"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.1/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "00496e4b3486069475384fbb523dc5157c6ab22dee12e7496d45d4c172567d1b"
+        }
+      }
+    },
+    "v1.6.0": {
+      "darwin": {
+        "aarch64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.0/deno-aarch64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "c1ab94c01e570392cc57a4ef01a83a73b9ac85e1f9aab0c94fbc71ed07331d8c"
+        },
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.0/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "06eb01292c265f7f3b9f3c4c9fee0788bec05a844a19c7d1f4fecf69dda89409"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.0/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "ad570b68fc06fde9be165127ec4174bcfb8587f99410410fbd4c61fb971fba05"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.6.0/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "ad07e331515c3299079cf4f8bca9a5fe9931c992468ca65cdc7d0ff3b4996237"
+        }
+      }
+    },
+    "v1.5.4": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.4/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "b5c67f7c7245441b208c76679977149a1e7ec44f614f8209c60704da41828541"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.4/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "0eeba445dbc6fc1593e6ede6b143e2cc353ee060f7c3459ab23777af3b0a7fe0"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.4/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "1232e50725aaec62a287d74029b2b75ce7ad7cc835bfc75ddb299e0f1bf3ec0f"
+        }
+      }
+    },
+    "v1.5.3": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.3/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "dbacd361a880e938216c5f7ecc27e3b43e36d842efeeac2c11774e9d3b795f3d"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.3/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "8ed43d703f1c2e2e92c47dbd7eaa10644fa6cd5f1629e5872d73c2ed133b4ef2"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.3/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "2452296818a057db9bf307bd72c5da15883108415c1f7bd4f86153e3bce5cd44"
+        }
+      }
+    },
+    "v1.5.2": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.2/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "a5415a18258ebca98a3f754d9e48e22f04104b27be7b759c88c0f2936012c0ab"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.2/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "c7f60da569b7dd6de7ff4225b8b9a359023d65dc295e5aed84f78a6f5302e25c"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.2/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "ad0f694425d51b051e71d4027636dbad601283b7f695e7e0e8c7800fd1ea946c"
+        }
+      }
+    },
+    "v1.5.1": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.1/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "eeffb8c42dcd56c4ce52e68fa9ce7b6ae02df57515f152e0951915c4b4b0b1ba"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.1/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "43d85206f2702407aa1461396a900533efad9b7671d9dea7309e34d3caf82776"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.1/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "d0cc628cede22a9e318c558cb586b0cb99891ac850b8fe43b279e03469e427a5"
+        }
+      }
+    },
+    "v1.5.0": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.0/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "fb1f4fe9d034cf72cf115ec020b1cd41aa5191fd479be6863ce66405c6e1898b"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.0/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "9767952d71da1166744700fda7c4212ccf4b240596a6cefaa4a9a0faaa88712f"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.5.0/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "91694859102bf98eafb8fd4823545745144f30f090f723be209873381a49cd21"
+        }
+      }
+    },
+    "v1.4.6": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.6/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "b8d999fcc2d0ca4d4d4fe6a25dacf88cbf99ac4c1d493855ec90dcaf380f8743"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.6/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "a1242ba82308920cb89764f00e680cc30cc647585298cc251acfc7d4582ab9ce"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.6/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "db69a4548cc31c093b96ed9c69a6a5b136285e84be315cbe95d8a3ad1caeea09"
+        }
+      }
+    },
+    "v1.4.5": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.5/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "b9c7461b09a78455ffde03cc23cb5cd5b1fc8a22d458e9c0a48f65c273b3eeb8"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.5/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "15b70317d1c8e821ad14c4c2d6cc8048c47f5e31c743660949550b264965e111"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.5/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "9d3d72429e69eb60c358318cde9d3b76f30cc20342598686d29a4f6645ef8599"
+        }
+      }
+    },
+    "v1.4.4": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.4/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "fd8997040dcfc6ef48ef4b05c88b1a8b30362c03ebb552a23a7888bcc60b77a0"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.4/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "3013f3dd2f96a6748461de2221e102f58f6b6f8dc392ca89a0968b05a79e1325"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.4/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "ce2ad2e51b3b49a4d7844fa26092437eaaa89e90e2df4bf33859b9fb8c89be9c"
+        }
+      }
+    },
+    "v1.4.3": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.3/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "94a33573327d41b68c7904e286755ede88747ed21c544d62314a60b23982c474"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.3/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "7f691bd901ae90e1f902ed62543fcd021c35882e299bb55c27e44747f00a5313"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.3/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "3b8234a59dee9d8e7a150ddb7d1963ace991ff442b366ead954752f35081985f"
+        }
+      }
+    },
+    "v1.4.2": {
+      "darwin": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.2/deno-x86_64-apple-darwin.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "74b7cbaca0cbc4e8003cc54b6f761912243eccac82d1c4cff8ede6668b95cd16"
+        }
+      },
+      "windows": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.2/deno-x86_64-pc-windows-msvc.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "d55d1bd757fee2c4a01b7f18aabd8f5e5a86b5734178f80912b45b2424ef01d8"
+        }
+      },
+      "linux": {
+        "x86_64": {
+          "url": "https://github.com/denoland/deno/releases/download/v1.4.2/deno-x86_64-unknown-linux-gnu.zip",
+          "lastUpdate": 1623520652597,
+          "sha256": "8075a90662237eb0cef406bdb22b0774d25617627afb24e942f58ae21234fddb"
+        }
+      }
+    }
+  },
+  "lastUpdate": 1623521034479
+}

@@ -1,0 +1,16 @@
+load("//:def.bzl", "deno_binary", "deno_app")
+
+deno_app(
+    name = "deno_releases_cache_update_tool_app",
+    main = "deno-releases-cache.js",
+    permissions = [
+        "--allow-read",
+        "--allow-write",
+        "--allow-net"
+    ],
+)
+
+deno_binary(
+    name = "deno_releases_cache_update_tool",
+    app  = ":deno_releases_cache_update_tool_app",
+)

@@ -2,3 +2,5 @@ toolchain_type(
     name = "toolchain_type",
     visibility = ["//visibility:public"],
 )
+
+# Add rule to update generated cache file via tools
