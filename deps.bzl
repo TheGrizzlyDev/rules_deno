@@ -21,15 +21,38 @@ def _maybe(rule, name, **kwargs):
     if name not in native.existing_rules():
         rule(name = name, **kwargs)
 
-def deno_register_toolchains():
+def deno_register_toolchains(name = "toolchain_deno", version = "v1.11.0"):
     deno_download(
-        name = "toolchain_deno_linux_amd64",
-        urls = ["https://github.com/denoland/deno/releases/download/v1.10.3/deno-x86_64-unknown-linux-gnu.zip"],
-        sha256 = "7b278d41356ad0b36e79f9f444bd3e6b8e308fd08cb4ea381e085390825db22d",
+        name = "%s_linux" % name,
         os = "linux",
         arch = "amd64",
+        deno_version = version
+    )
+
+    deno_download(
+        name = "%s_windows" % name,
+        os = "windows",
+        arch = "amd64",
+        deno_version = version
+    )
+
+    deno_download(
+        name = "%s_darwin_amd64" % name,
+        os = "darwin",
+        arch = "amd64",
+        deno_version = version
+    )
+
+    deno_download(
+        name = "%s_darwin_arm64" % name,
+        os = "darwin",
+        arch = "arm64",
+        deno_version = version
     )
 
     native.register_toolchains(
-        "@toolchain_deno_linux_amd64//:toolchain"
+        "@%s_linux//:toolchain" % name,
+        "@%s_windows//:toolchain" % name,
+        "@%s_darwin_amd64//:toolchain" % name,
+        "@%s_darwin_arm64//:toolchain" % name,
     )
