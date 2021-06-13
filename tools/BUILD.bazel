@@ -2,7 +2,7 @@ load("//:def.bzl", "deno_binary", "deno_app")
 
 deno_app(
     name = "deno_releases_cache_update_tool_app",
-    main = "deno-releases-cache.js",
+    main = "update-deno-downloads.js",
     permissions = [
         "--allow-read",
         "--allow-write",
@@ -13,4 +13,14 @@ deno_app(
 deno_binary(
     name = "deno_releases_cache_update_tool",
     app  = ":deno_releases_cache_update_tool_app",
+)
+
+genrule(
+    name = "deno_update_release_cache",
+    srcs = [
+        ":deno_releases_cache_update_tool",
+        "//generated:deno-releases-cache.json",
+    ],
+    outs = ["deno-release-cache.json"],
+    cmd  = "$(location :deno_releases_cache_update_tool) $(location //generated:deno-releases-cache.json) > $@"
 )

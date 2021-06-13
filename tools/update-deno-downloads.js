@@ -63,4 +63,4 @@ for(const release of releases) {
 
 cache.lastUpdate = lastUpdate
 
-await Deno.writeTextFile(cacheFile, JSON.stringify(cache, null, 2))
+console.log(JSON.stringify(cache, null, 2))
